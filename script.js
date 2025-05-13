@@ -1,8 +1,12 @@
-function indexOfIgnoreCase(s1, s2) {
-  // write your code here
-}
+function indexOfIgnoreCase(str, subStr) {
+  const lowerStr = str.toLowerCase();
+  const lowerSubStr = subStr.toLowerCase();
 
-// Please do not change the code below
-const s1 = prompt("Enter s1:");
-const s2 = prompt("Enter s2:");
-alert(indexOfIgnoreCase(s1, s2));
+  return lowerStr.indexOf(lowerSubStr);
+}
+console.log(indexOfIgnoreCase("Hello World", "world")); 
+console.log(indexOfIgnoreCase("apple", "Ple"));         
+console.log(indexOfIgnoreCase("test", "aaa"));          
+console.log(indexOfIgnoreCase("OpenAI", ""));           
+console.log(indexOfIgnoreCase("", "a"));                
+
